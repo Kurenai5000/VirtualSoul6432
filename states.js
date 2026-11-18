@@ -10,6 +10,7 @@ const state = {
   mind:null,
   //innerVoice is purely your internal monologue
   innerVoice:null,
+  currentAction:null,
 
   //perception
   visual:null,
@@ -23,24 +24,21 @@ const state = {
   emotion:{type:null, intensity:0},
   //feeling is more physical compared to emotion like pain or aggitation
   feeling:{type:null, intensity:0},
+
   //impressions on current situation/person talking to
   impressions:null,
-  
-  //0 to 100. 50 being neutral. 0 being starving or completely turned off. 100 being absolutely full.
-  hunger:0,
-  thirst:0,
-  arousal:0,
-
-  //where they currently are/current scene
+//where they currently are/current scene
   location:null,
 
   facialExpression:null,
   bodyLanguage:null,
-  //Put health conditions or anything prominent here
+  //Hunger, thirst, arousal, health conditions, etc
   health:{},
-  //Their current physical action
-  currentAction:null,
-  currentGoal:null,
+  
+  //clothes and accessories
+  currentClothing:null,
+  //meaning pockets, bags, what is inside them
+  inventory:null, 
 };
 
 //physicalForm is their current body. Semi volatile
@@ -53,11 +51,6 @@ const physicalForm = {
   build:null,
   height:null,
   weight:null,
-
-  //clothes and accessories
-  currentClothing:null,
-  //meaning pockets, bags
-  inventory:null, 
 
   species:null,
   subspecies:null,
@@ -74,6 +67,7 @@ const mentalForm = {
   desires:[],
   drives:[],
   goals:[],
+  majorLifeEvents[],
 
   name:null,
   personality:[],

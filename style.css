@@ -1,1 +1,6 @@
+#twoBoxes {display:flex; flex-direction: row;}
+#chatBox {display:flex; flex-direction: column;}
 
+#dataBox {display:flex; flex-direction: column;}
+
+.boxed {border: 1px solid black; margin: .5%;}

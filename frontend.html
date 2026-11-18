@@ -11,21 +11,63 @@
   <body>
     <main>
       <!--Vertical, 2 boxes for these divs. Chat stuff on left, data on right-->
-      <div id="textData">
-      </div>
-
+     <div id="twoBoxes">
       <!--Three main boxes here, picture, response, textEnter, vertical -->
-      </div id="chatBox">
-       <div><img id="avatarImage"></div>
+      </div id="chatBox" class="boxed">
+       <div><img id="avatarImage" class="boxed"></div>
 
-       <div></div>
+       <div><p id="ouputText" class="boxed">This is where you will recieve chat text</p></div>
 
-       <div></div>
-
+       <div><textarea id="inputText" class="boxed" rows="4" cols="50" "placeholder="Enter text here"></textarea></div>
       </div>   
+
+       <!--State data then semi volatiles-->
+       <div id="dataBox" class="boxed">
+        <div id="statesSection" class="boxed">
+         <p id="focusText">Focus - </p>
+         <p id="mindText">Mind - </p>
+         <p id="innerVoiceText">InnerVoice - </p>
+         <p id="currentActionText">Current Action - </p>
+
+         <p id="visualText">Visual - </p>
+         <p id="audioText">Audio - </p>
+         <p id="smellText">Smell - </p>
+         <p id="tasteText">Taste - </p>
+         <p id="touchText">Touch - </p>
+
+         <p id="emotionText">Emotion - </p>
+         <p id="feelingText">Feeling - </p>
+
+         <p id="impressionsText">Impressions - </p>
+         <p id="locationText">Location - </p>
+
+         <p id="facialExpressionText">Facial Expression - </p>
+         <p id="bodyLanguageText">Body Language - </p>
+         <p id="healthText">Health - </p>
+
+         <p id="clothingText">Clothing - </p>
+         <p id="inventoryText">Inventory - </p>
+
+        </div>
+  
+        <div id="physicalFormSection" class="boxed">
+        </div>
+
+        <div id="mentalFormSection" class="boxed">
+        </div>
+
+        <div id="memorySection" class="boxed">
+        </div>
+
+        <div id="miscSection" class="boxed">
+        </div>
+
+       </div>
+
+     </div>
 
     </main>
     <script src="states.js"></script>
   </body>
 </html>
-
+ 
