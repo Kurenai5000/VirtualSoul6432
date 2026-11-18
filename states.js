@@ -74,7 +74,6 @@ const mentalForm = {
   relationships:[
     //{who, type, intensity:0-100, notes:}
   ],
-  sexualPreference:[],
 
   //these would signify restriction
   traumas:[],
